@@ -2,6 +2,8 @@ package main
 
 import "fmt" //fmt包中提供格式化，输出，输入的函数
 
+//用gofmt -w main.go 格式化文件空格缩进
+
 func main() {
 	// 演示转义字符的使用 \t
 	fmt.Println("tom\tjack")
