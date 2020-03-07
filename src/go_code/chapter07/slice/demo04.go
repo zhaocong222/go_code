@@ -10,4 +10,10 @@ func main() {
 	//将切片追加到切片
 	slice3 = append(slice3, slice3...)
 	fmt.Println("slice3", slice3)
+
+	slice4 := []int{1, 2, 3, 4, 5, 6}
+	fmt.Println(slice4)
+	//操作删除2,3,4
+	slice4 = append(slice4[:1], slice4[4:]...)
+	fmt.Println(slice4)
 }

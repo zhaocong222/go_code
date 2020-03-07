@@ -43,6 +43,12 @@ type TV3 struct {
 	*Brand
 }
 
+type E struct {
+	TV3
+	int     //匿名字段是基本数据类型,不能有第2个
+	n   int //如果需要多个int类型字段，则必须给int字段指定名字
+}
+
 func main() {
 	//如果嵌套的A,B两个匿名结构体，存在相同字段名，需要指明 (对方法也是一样)
 	var c C
@@ -84,5 +90,10 @@ func main() {
 
 	//等价 fmt.Println(*(tv3.Goods), *(tv3.Brand))
 	fmt.Println(*tv3.Goods, *tv3.Brand)
+
+	//演示一下匿名字段时基本数据类型的使用
+	var e E
+	e.int = 20
+	fmt.Println("e=", e.int)
 
 }

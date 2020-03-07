@@ -33,7 +33,7 @@ func main() {
 	// (*person).Name = "scott"
 	// go的设计者为了程序员使用方便，也可以person.Name = "scott"
 	// 原因和上面一样，底层会对person.Name = "scott"进行处理，会加上(*person)
-	//下面2种写法斗可以
+	//下面2种写法都可以
 	(*person).Name = "scott"
 	person.Name = "Guia"
 }

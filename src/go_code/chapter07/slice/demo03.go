@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 	//使用常规的for循环遍历切片
-	arr := [...]int{10, 20, 30, 40, 50}
-	slice := arr[1:4] //[20,30,40]
+	arr := [...]int{10, 20, 30, 40, 50} //定义数组
+	slice := arr[1:4]                   //[20,30,40]
 
 	for i := 0; i < len(slice); i++ {
 		fmt.Printf("slice[%v]=%v ", i, slice[i])
