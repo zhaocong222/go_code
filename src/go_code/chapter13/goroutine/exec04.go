@@ -64,7 +64,7 @@ func main() {
 
 	//协程匿名函数
 	go func() {
-
+		//一直从管道里取数据，直到取得到的和exitChan里存储的元素个数一致，则视为所有goroutines完成。
 		for i := 0; i < 4; i++ {
 			<-exitChan //阻塞
 		}
